@@ -25,4 +25,5 @@ Debido al ruido se implemento un flitro dentro del codigo del PIC el cual se enc
      send = filter+0.5;
 ```
 al momento de investigar acerca de este filtro estos tiene un valor inicial de 0, pero esto se inicia con la primera lectura del los datos,
-el filtor es mejor mietras alpha sea menor, pero eso implica una respuesta mas lenta, se uso un valor de alpha de 0.05 o un 5%.
+el filtro es mejor mietras alpha sea menor, pero eso implica una respuesta mas lenta, se uso un valor de alpha de 0.05 o un 5%, sumarle 0.5 es para redondear el valor,
+y guardarlo en una variable tipo int para obtener un resultado entero.
